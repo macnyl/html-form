@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class='one'>
+        <div class='two'>
+            <div class="text">
+            <h1>Contact Form</h1>
+            <p>Please fill in your information and we'll be sending your order:</p>
+            <hr>
+        <form action="#" method="get">
+            <span>Your Name:</span>
+            <label>
+                <input class="inPut1" type="text" placeholder="First Name" autofocus required patter='[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?'>
+            </label>
+            <label>
+                <input class="inPut2" type="text" placeholder="Last name" autofocus required patter='[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?'>
+            </label>
+            <br>
+            <span>Email:</span> 
+            <label class="style">
+                <input class="inPut3" type="text" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </label>
+            <br>
+            <label>
+                <span>Phone*</span>
+                <input class="inPut4" type="tel" autocomplete="on" placeholder="380(50)" pattern="\d{3}|\d{9}">
+                <input class="inPut5" type="tel" autocomplete="on" placeholder="000-00-00" pattern="\d{3}|\d{9}">
+            </label>
+            <br>
+            <label>
+                <span>Birth Day:</span>
+                    <input class="inPut6" type="date" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" required />
+            </label>
+            <br>
+            <label>
+                <span>Message*</span>
+                <input class="inPut7" type="messages">
+            </label>
+            <hr>
+            <button class="btn">Submit form</button>
+        </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

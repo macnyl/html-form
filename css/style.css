@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+:root{
+    --contact-size: 500px;
+    --contact-color: rgba(0, 0, 0, 0.333);
+    --font-color: rgb(255, 249, 249);
+    --box-shadow: 0 0 10px rgba(70, 57, 57, 0.5);
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url(/html-form/image/Contact_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.two{
+    margin-top: 25.4vh;
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    box-shadow: var(--box-shadow);
+    background: var(--contact-color);
+}
+
+.text{
+    margin: calc(var(--contact-size)*0.040);
+
+}
+
+.text > h1{
+    margin-bottom: calc(var(--contact-size)*0.020);
+    font-size: calc(var(--contact-size)*0.05);
+}
+
+.text > p{
+    font-size: calc(var(--contact-size)*0.040);
+
+}
+
+.style{
+    color: rgba(0, 0, 0, 0.333);
+}
+
+input{
+    padding: 6px 8px;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+input:valid {
+    border-color: green;
+}
+  
+input:invalid {
+    border-color: red;
+}
+
+.inPut1{
+    margin-left: 46.65px;
+    margin-right: 0;
+}
+
+.inPut2{
+    margin-left: -2px;
+}
+
+.inPut3{
+    margin-left: 85.65px;
+    width: 397.9px;
+}
+
+.inPut4{
+    width: 71px;
+    margin-left: 78px;
+}
+
+.inPut5{
+    margin-left: -6.1px;
+    width: 323.5px;
+}
+
+.inPut6{
+    width: 398px;
+    margin-left: 60px;
+}
+
+.inPut7{
+    margin-left: 59px;
+    width: 400px;
+    height: 100px
+}
+
+button{
+    width: 100%;
+    margin-top: 5px;
+    padding: 6px 8px;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.btn:hover{
+    background-color: white;
+}
